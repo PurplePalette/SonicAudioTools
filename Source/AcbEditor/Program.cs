@@ -356,7 +356,16 @@ namespace AcbEditor
 
             catch (Exception exception)
             {
-                MessageBox.Show($"{exception.Message}", "ACB Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show($"{exception.Message}", "ACB Editor", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Console.WriteLine(exception.Message);
+                Console.WriteLine();
+                Console.WriteLine(exception.Source);
+                Console.WriteLine();
+                Console.WriteLine(exception.StackTrace);
+                Console.WriteLine();
+                Console.WriteLine(exception.TargetSite);
+                Console.WriteLine();
+                Console.WriteLine(exception.ToString());
             }
 #endif
         }
