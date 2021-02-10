@@ -419,13 +419,13 @@ namespace AcbEditor
 
         private static void OnProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            int left = Console.CursorLeft;
+            /*int left = Console.CursorLeft;
             int top = Console.CursorTop;
 
             Console.Write(buffer);
             Console.SetCursorPosition(left, top);
             Console.WriteLine("Progress: {0}%", e.Progress);
-            Console.SetCursorPosition(left, top);
+            Console.SetCursorPosition(left, top);*/
         }
     }
 }
